@@ -1,0 +1,426 @@
+{
+  "name": "Final_Project_MND_613_Qitian_J",
+  "created": "2025-11-30T18:46:23.733Z",
+  "scenes": {
+    "scene1": {
+      "name": "Scene 1",
+      "type": "image",
+      "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/Lobby_1762810119664.png",
+      "videoSrc": null,
+      "videoVolume": 0.5,
+      "hotspots": [
+        {
+          "id": 1,
+          "type": "navigation",
+          "position": "4.88 0.66 5.61",
+          "text": "",
+          "scene": "scene1",
+          "navigationTarget": "scene_1762809557753",
+          "audio": null
+        },
+        {
+          "id": 40,
+          "type": "image",
+          "position": "-6.80 -1.57 0.05",
+          "text": "",
+          "scene": "scene1",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 2,
+          "imageAspectRatio": 1,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/Placeholder_1764528131428.png"
+        },
+        {
+          "id": 41,
+          "type": "image",
+          "position": "3.76 -2.58 -4.96",
+          "text": "",
+          "scene": "scene1",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 2,
+          "imageAspectRatio": 1,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/Placeholder_1764528131428.png"
+        }
+      ],
+      "startingPoint": {
+        "rotation": {
+          "x": -37.425813637095146,
+          "y": -994.9985070241896,
+          "z": 0
+        }
+      },
+      "globalSound": null
+    },
+    "scene_1762809557753": {
+      "name": "Pavlov's lab",
+      "type": "image",
+      "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/test2_1762809487238.png",
+      "videoSrc": null,
+      "videoVolume": 0.5,
+      "hotspots": [
+        {
+          "id": 4,
+          "type": "text-audio",
+          "position": "-7.50 1.59 0.21",
+          "text": "Learning is permanent behavioral change. Links actions to specific results. Rewards increase behavior, punishment decreases. Prioritizes observable actions over thoughts.",
+          "scene": "scene_1762809557753",
+          "navigationTarget": null,
+          "audio": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/audio/BEH-Overview_1764445204660.mp3",
+          "popupWidth": 4,
+          "popupHeight": 2.5
+        },
+        {
+          "id": 6,
+          "type": "image",
+          "position": "-4.39 2.60 6.00",
+          "text": "",
+          "scene": "scene_1762809557753",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 6,
+          "imageAspectRatio": 0.56625,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-1_1764453744340.png"
+        },
+        {
+          "id": 9,
+          "type": "image",
+          "position": "-4.16 -0.68 5.81",
+          "text": "",
+          "scene": "scene_1762809557753",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 4.52,
+          "imageAspectRatio": 0.455,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-2_1764453745523.png"
+        },
+        {
+          "id": 10,
+          "type": "image",
+          "position": "-3.62 3.31 -6.34",
+          "text": "",
+          "scene": "scene_1762809557753",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 6.02,
+          "imageAspectRatio": 0.5725,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-3_1764453746580.png"
+        },
+        {
+          "id": 11,
+          "type": "image",
+          "position": "-3.90 -0.10 -6.18",
+          "text": "",
+          "scene": "scene_1762809557753",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 6,
+          "imageAspectRatio": 0.42875,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-4_1764453747572.png"
+        },
+        {
+          "id": 12,
+          "type": "navigation",
+          "position": "6.96 3.77 -1.75",
+          "text": "",
+          "scene": "scene_1762809557753",
+          "navigationTarget": "scene_1764459311691",
+          "audio": null
+        },
+        {
+          "id": 13,
+          "type": "image",
+          "position": "6.64 4.63 -1.72",
+          "text": "",
+          "scene": "scene_1762809557753",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 2,
+          "imageAspectRatio": 1,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/Wrap-BEH-ID_1764460025573.png"
+        },
+        {
+          "id": 14,
+          "type": "navigation",
+          "position": "1.05 1.60 7.43",
+          "text": "",
+          "scene": "scene_1762809557753",
+          "navigationTarget": "scene1",
+          "audio": null
+        }
+      ],
+      "startingPoint": {
+        "rotation": {
+          "x": -4.9274370381250225,
+          "y": -992.1337180485336,
+          "z": 0
+        }
+      },
+      "globalSound": null
+    },
+    "scene_1764459311691": {
+      "name": "BEH Office",
+      "type": "image",
+      "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-office_1764459273277.png",
+      "videoSrc": null,
+      "videoVolume": 0.5,
+      "hotspots": [
+        {
+          "id": 23,
+          "type": "navigation",
+          "position": "-7.23 3.34 0.94",
+          "text": "",
+          "scene": "scene_1764459311691",
+          "navigationTarget": "scene_1762809557753",
+          "audio": null
+        },
+        {
+          "id": 24,
+          "type": "text",
+          "position": "-1.46 8.95 0.30",
+          "text": "Warp distortions detected - but do not worry. It’s a temporary bug. The office may or may not shift realities later.",
+          "scene": "scene_1764459311691",
+          "navigationTarget": null,
+          "audio": null,
+          "popupWidth": 4,
+          "popupHeight": 2.5
+        },
+        {
+          "id": 25,
+          "type": "image",
+          "position": "-7.06 -0.67 1.12",
+          "text": "",
+          "scene": "scene_1764459311691",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 2,
+          "imageAspectRatio": 1,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/Wrap-BEH-PG_1764523002896.png"
+        },
+        {
+          "id": 26,
+          "type": "navigation",
+          "position": "-7.25 0.30 -1.40",
+          "text": "",
+          "scene": "scene_1764459311691",
+          "navigationTarget": "scene_1764523692634",
+          "audio": null
+        },
+        {
+          "id": 32,
+          "type": "text",
+          "position": "-0.06 4.87 6.75",
+          "text": "Behaviorism influences instructional design by focusing on clear, measurable goals\nand using rewards to encourage learning. \nTeachers should break down tasks into small steps, provide practice,\nand give positive feedback and correction to shape learner’s behavior.",
+          "scene": "scene_1764459311691",
+          "navigationTarget": null,
+          "audio": null,
+          "popupWidth": 4,
+          "popupHeight": 2.5
+        },
+        {
+          "id": 34,
+          "type": "image",
+          "position": "0.61 -0.45 7.19",
+          "text": "",
+          "scene": "scene_1764459311691",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 4,
+          "imageAspectRatio": 0.67,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-ID-2_1764527596615.png"
+        },
+        {
+          "id": 35,
+          "type": "image",
+          "position": "4.61 -0.50 5.53",
+          "text": "",
+          "scene": "scene_1764459311691",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 4,
+          "imageAspectRatio": 0.67,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-ID-1_1764527566880.png"
+        },
+        {
+          "id": 36,
+          "type": "image",
+          "position": "-3.83 -0.73 6.01",
+          "text": "",
+          "scene": "scene_1764459311691",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 4,
+          "imageAspectRatio": 0.70125,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-ID-3_1764527607376.png"
+        },
+        {
+          "id": 37,
+          "type": "weblink",
+          "position": "4.10 -1.79 5.29",
+          "text": "",
+          "scene": "scene_1764459311691",
+          "navigationTarget": null,
+          "audio": null,
+          "weblinkUrl": "https://www.gettingsmart.com/2019/08/28/what-is-mastery-learning/",
+          "weblinkTitle": "What is Mastery Learning?"
+        },
+        {
+          "id": 38,
+          "type": "weblink",
+          "position": "0.59 -2.01 6.55",
+          "text": "",
+          "scene": "scene_1764459311691",
+          "navigationTarget": null,
+          "audio": null,
+          "weblinkUrl": "https://elearningindustry.com/computer-based-instruction-theory",
+          "weblinkTitle": "Computer-based Instruction"
+        },
+        {
+          "id": 39,
+          "type": "weblink",
+          "position": "-3.57 -1.74 5.69",
+          "text": "",
+          "scene": "scene_1764459311691",
+          "navigationTarget": null,
+          "audio": null,
+          "weblinkUrl": "https://techiweek.com/criterion-referenced-instruction-robert-mager/",
+          "weblinkTitle": "Criterion-Referenced Instruction"
+        }
+      ],
+      "startingPoint": {
+        "rotation": {
+          "x": 8.594366926962396,
+          "y": -1618.6057712445756,
+          "z": 0
+        }
+      },
+      "globalSound": null
+    },
+    "scene_1764523692634": {
+      "name": "BEH Playground",
+      "type": "image",
+      "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-Playground.png",
+      "videoSrc": null,
+      "videoVolume": 0.5,
+      "hotspots": [
+        {
+          "id": 27,
+          "type": "weblink",
+          "position": "-3.91 0.75 -6.34",
+          "text": "",
+          "scene": "scene_1764523692634",
+          "navigationTarget": null,
+          "audio": null,
+          "weblinkUrl": "https://ssflake.github.io/behaviorism-game.html",
+          "weblinkPreview": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/Scene-indicator_1764524040203.png"
+        },
+        {
+          "id": 28,
+          "type": "image",
+          "position": "-5.53 0.81 -5.00",
+          "text": "",
+          "scene": "scene_1764523692634",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 2,
+          "imageAspectRatio": 1,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/Wrap-BEH-PG_1764523002896.png"
+        },
+        {
+          "id": 29,
+          "type": "navigation",
+          "position": "6.21 0.97 -4.16",
+          "text": "",
+          "scene": "scene_1764523692634",
+          "navigationTarget": "scene1",
+          "audio": null
+        },
+        {
+          "id": 30,
+          "type": "image",
+          "position": "-1.10 0.73 -7.37",
+          "text": "",
+          "scene": "scene_1764523692634",
+          "navigationTarget": null,
+          "audio": null,
+          "imageScale": 2,
+          "imageAspectRatio": 1,
+          "image": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/images/BEH-Reflection-log_1764524501481.png"
+        },
+        {
+          "id": 31,
+          "type": "audio",
+          "position": "-1.42 -0.34 -7.10",
+          "text": "",
+          "scene": "scene_1764523692634",
+          "navigationTarget": null,
+          "audio": "https://vlyzifpqemfanxllnmuf.supabase.co/storage/v1/object/public/files/Qitian/audio/BEH-Reflection_1764525375087.mp3"
+        }
+      ],
+      "startingPoint": {
+        "rotation": {
+          "x": -9.923839470815619,
+          "y": -2118.339560157682,
+          "z": 0
+        }
+      },
+      "globalSound": null
+    }
+  },
+  "currentScene": "scene1",
+  "customStyles": {
+    "hotspot": {
+      "infoButton": {
+        "backgroundColor": "#4a90e2",
+        "textColor": "#ffffff",
+        "fontSize": 12,
+        "opacity": 0.9,
+        "size": 0.4
+      },
+      "popup": {
+        "backgroundColor": "#333333",
+        "textColor": "#ffffff",
+        "borderColor": "#555555",
+        "borderWidth": 0,
+        "borderRadius": 0,
+        "opacity": 1,
+        "fontSize": 1,
+        "padding": 0.2
+      },
+      "closeButton": {
+        "size": 0.4,
+        "opacity": 1,
+        "textSize": 4,
+        "backgroundColor": "#4a90e2",
+        "textColor": "#ffffff"
+      }
+    },
+    "audio": {
+      "buttonColor": "#FFFFFF",
+      "buttonOpacity": 1
+    },
+    "buttonImages": {
+      "play": "images/play.png",
+      "pause": "images/pause.png"
+    },
+    "navigation": {
+      "ringColor": "#005500",
+      "ringOuterRadius": 0.64,
+      "ringThickness": 0.05,
+      "weblinkRingColor": "#001f5b",
+      "labelColor": "#ffffff",
+      "labelBackgroundColor": "#000000",
+      "labelOpacity": 0.8
+    },
+    "image": {
+      "borderColor": "#ffffff",
+      "borderWidth": 0,
+      "borderRadius": 0.05,
+      "opacity": 1
+    },
+    "gaze": {
+      "duration": 2
+    }
+  },
+  "version": "1.0"
+}
