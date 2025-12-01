@@ -53,7 +53,7 @@ const CUSTOM_STYLES = {
     "opacity": 1
   },
   "gaze": {
-    "duration": 2
+    "duration": 3
   }
 };
 
@@ -641,6 +641,9 @@ class HotspotProject {
         this.createHotspots(scene.hotspots);
         console.log('Hotspots created');
         
+        // Load ground for this scene
+        this.loadGround(sceneId);
+        
         // Apply starting point if available
         setTimeout(() => {
           this.applyStartingPoint(scene);
@@ -714,6 +717,9 @@ class HotspotProject {
         container.innerHTML = '';
         this.createHotspots(scene.hotspots);
         console.log('Hotspots created');
+        
+        // Load ground for this scene
+        this.loadGround(sceneId);
         
         // Apply starting point if available
         setTimeout(() => {
@@ -815,6 +821,9 @@ class HotspotProject {
         const container = document.getElementById('hotspot-container');
         container.innerHTML = '';
         this.createHotspots(scene.hotspots);
+        
+        // Load ground for this scene
+        this.loadGround(sceneId);
         
         // Apply starting point
         setTimeout(() => {
@@ -973,6 +982,67 @@ class HotspotProject {
     else {
       return `./images/${imagePath}`;
     }
+  }
+
+  loadGround(sceneId) {
+    const scene = this.scenes[sceneId];
+    
+    // Remove existing ground if present
+    const existingGround = document.getElementById('scene-ground');
+    if (existingGround) {
+      existingGround.remove();
+    }
+
+    // Check if ground is enabled for this scene
+    if (!scene || !scene.ground || !scene.ground.enabled) {
+      return;
+    }
+
+    const ground = scene.ground;
+    
+    // Check for required textures
+    if (!ground.diffuseMap || !ground.normalMap) {
+      console.warn(`Ground enabled for scene ${sceneId} but missing required textures`);
+      return;
+    }
+
+    // Get dimensions and settings
+    const width = ground.size?.width || 20;
+    const depth = ground.size?.depth || 20;
+    const posX = ground.position?.x || 0;
+    const posY = ground.position?.y || 0;
+    const posZ = ground.position?.z || 0;
+    const repeat = ground.repeat || 1;
+
+    // Build material string with scene-specific texture IDs
+    let material = `src: #ground-diffuse-${sceneId}; normalMap: #ground-normal-${sceneId}; normalTextureRepeat: ${repeat} ${repeat}; repeat: ${repeat} ${repeat}`;
+    
+    if (ground.roughnessMap) {
+      material += `; roughnessMap: #ground-roughness-${sceneId}`;
+    }
+    
+    if (ground.aoMap) {
+      material += `; ambientOcclusionMap: #ground-ao-${sceneId}; ambientOcclusionTextureRepeat: ${repeat} ${repeat}`;
+    }
+    
+    if (ground.displacementMap) {
+      material += `; displacementMap: #ground-displacement-${sceneId}; displacementScale: 0.5; displacementBias: 0`;
+    }
+
+    // Create ground plane
+    const groundPlane = document.createElement('a-plane');
+    groundPlane.id = 'scene-ground';
+    groundPlane.setAttribute('rotation', '-90 0 0');
+    groundPlane.setAttribute('width', width);
+    groundPlane.setAttribute('height', depth);
+    groundPlane.setAttribute('position', `${posX} ${posY} ${posZ}`);
+    groundPlane.setAttribute('material', material);
+
+    // Add to scene
+    const aScene = document.querySelector('a-scene');
+    aScene.appendChild(groundPlane);
+    
+    console.log(`Ground loaded for scene ${sceneId}`);
   }
 
   createHotspots(hotspots) {

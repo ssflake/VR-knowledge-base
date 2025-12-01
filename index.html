@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final_Project_MND_613_Qitian_J - VR Hotspot Experience</title>
+    <title>MND613_Final_1201 - VR Hotspot Experience</title>
     <meta name="description" content="Interactive VR Hotspot Experience" />
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.5.4/dist/aframe-extras.min.js"></script>
@@ -12,7 +12,7 @@
   
   <body>
     <div id="project-info">
-      <h1>Final_Project_MND_613_Qitian_J</h1>
+      <h1>MND613_Final_1201</h1>
       <p>Interactive VR Experience • Click on hotspots to explore</p>
     </div>
 
@@ -61,9 +61,11 @@
         <img id="pause" src="./images/pause.png" />
         <!-- Video asset for 360° video scenes -->
         <video id="scene-video-dynamic" crossorigin="anonymous" loop muted playsinline webkit-playsinline style="display:none"></video>
+        
       </a-assets>
 
       <a-entity id="hotspot-container"></a-entity>
+      
       
       <!-- Initial loading environment -->
       <a-entity id="loading-environment" visible="true">
@@ -131,17 +133,17 @@
         
         <!-- Gaze-based cursor for VR mode -->
         <a-entity
-          cursor="fuse: true; fuseTimeout: 2000"
+          cursor="fuse: true; fuseTimeout: 3000"
           raycaster="objects: .clickable, .audio-control"
           position="0 0 -1"
           geometry="primitive: ring; radiusInner: 0.005; radiusOuter: 0.01"
           material="color: white; shader: flat; opacity: 0.8"
           id="gaze-cursor"
           visible="true"
-          animation__mouseenter="property: geometry.radiusOuter; to: 0.02; startEvents: mouseenter; dur: 2000; easing: easeInQuad"
+          animation__mouseenter="property: geometry.radiusOuter; to: 0.02; startEvents: mouseenter; dur: 3000; easing: easeInQuad"
           animation__mouseleave="property: geometry.radiusOuter; to: 0.01; startEvents: mouseleave; dur: 300; easing: easeOutQuad"
           animation__click="property: scale; to: 1.5 1.5 1.5; startEvents: click; dur: 150; easing: easeInOutQuad"
-          animation__fusing="property: scale; to: 2 2 2; startEvents: fusing; dur: 2000; easing: easeInQuad"
+          animation__fusing="property: scale; to: 2 2 2; startEvents: fusing; dur: 3000; easing: easeInQuad"
           animation__fusecomplete="property: scale; to: 1 1 1; startEvents: click; dur: 150; easing: easeOutQuad">
         </a-entity>
       </a-entity>
